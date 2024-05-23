@@ -12,6 +12,7 @@ html, body {
 }
 
 #main {
+    position: relative;
     height: 100%;
     width: 100%;
     background-image: url("https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2t5fGVufDB8fDB8fHww");
@@ -44,4 +45,38 @@ nav>i {
 
 nav>i:hover {
     background-color: rgba(0, 0, 0, 0.149);
+}
+
+#menu {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    /* right: -450px; */
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+#menu>h2 {
+    font-size: 4rem;
+}
+
+#menu>i {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+
+#menu>i:hover {
+    background-color: rgba(220, 43, 43, 0.149);
 }
